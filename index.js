@@ -290,7 +290,7 @@ GoProHero5.prototype.stream = function() {
 
 
 // ----------------------------------------------------- for testing purposes --------------------------------------------
-var cam = new GoProHero5()
+// var cam = new GoProHero5()
 
 
 // cam.getStatus((err,body) => {
