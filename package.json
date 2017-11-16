@@ -1,0 +1,20 @@
+{
+  "name": "goprohero5",
+  "version": "1.0.0",
+  "description": "api for GoPro Hero5 Balck ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christian Wagner",
+  "license": "ISC",
+  "devDependencies": {
+    "standard": "^10.0.3"
+  },
+  "dependencies": {
+    "async": "^2.5.0",
+    "https": "^1.0.0",
+    "jsdom": "^11.3.0",
+    "request": "^2.83.0"
+  }
+}
