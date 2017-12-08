@@ -2,7 +2,7 @@
 
 This a library that provides basic some basic functions to control a GoPro Hero 5. The device running the code in the library must be connected to the GoPro's Access Point in order for it to work.
 
-The GoPro api uses http.get request for all communications, including commands for things such as takening a picture. Since Http get request are fast, they are able to get a repsonse before the action it initated (like taking a photo) can come into effect.In order to avoid unwanted behaviour I wrap all command request such that they will not call their callback until the operation is completed on the goPro. This does complicate the code, but makes it safe to write code like the following.
+The GoPro api uses http.get request for all communications, including commands for things such as taking a picture. Since Http get request are fast, they are able to get a repsonse before the action it initiated (like taking a photo) can come into effect.In order to avoid unwanted behaviour I wrap all command request such that they will not call their callback until the operation is completed on the goPro. This does complicate the code, but makes it safe to write code like the following.
 
 ```java
    takePhoto((err) => {
@@ -15,7 +15,7 @@ The GoPro api uses http.get request for all communications, including commands f
 
 Without wrapping, this code will try to download photos while the goPro is still taking an image, Which results in the SD card getting corrupted.
 
-In order to avoid corrupting behaviour many of the functions, quiery  information from the GoPro to see if the desire changes have happen. This can results the completion of operations being a little slower. Safety comes at the cost of speed. 
+In order to avoid corrupting behaviour many of the functions, query  information from the GoPro to see if the desire changes have happen. This can results the completion of operations being a little slower. Safety comes at the cost of speed.
 
 # Functions
 ```java
